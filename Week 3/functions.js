@@ -30,9 +30,11 @@ console.log(getName());
 // Then print your greeting to the console by calling logGreeting2().
 
 function logGreetings2() { 
-    let myName = getName();
+    let myName = getName();  
     console.log("Hello! My name is " + myName)   
-}
+} 
+/* function getName() {
+    return "Alice";   */
 logGreetings2();
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
@@ -81,9 +83,9 @@ function numberofTimes(num,str) {
     }
 }
 
-console.log(numberofTimes(5, "Bye"));
-console.log(numberofTimes(3, "Happy"));
-console.log(numberofTimes(1, "Hello"));
+numberofTimes(5, "Bye");
+numberofTimes(3, "Happy");
+numberofTimes(1, "Hello");
 
 
 // Exercise 7. Read the following code (don't run it yet)
@@ -143,7 +145,7 @@ console.log(medArray)
   // Congrats, you made it to the end!
   // Did you find this easy or hard? If you used references, which ones helped you?
   // Please answer in a comment below.
-  I was able to understand
+  // I was able to understand and the referernces that were provided were very helpful
   //
   
   // Email your file to the course staff,
