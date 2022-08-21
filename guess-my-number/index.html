@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>A Guessing Game</h1>
+    <p>Enter Your Range</p>
+    <div class="range-container">
+        <form id="range-form">
+            <label>Range Min Value</label>
+            <input type="number" placeholder="min" name="min">
+            <label>Range Max Value</label>
+            <input type="number" placeholder="max" name="max">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <form id="guessForm">
+        <label>Guess Here:</label>
+        <input id="guess" type="number" />
+        <button type="submit">Submit</button>
+    </form>
+    <h3 id="guesses"></h3>
+    <div class="guess-list">
+        Numbers Already Guessed
+        <ul id="guess-list">
+            
+        </ul>
+    </div>
+    
+
+    <script src="game.js"></script>
+</body>
+
+</html>
