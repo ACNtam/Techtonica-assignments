@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.App h1{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  color: blue;
+
+}
+.game-container{
+  width: 100%;
+  padding: 20px;
+  background-color: yellow;
+}
+.question{
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: aquamarine;
+}
+.question div{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+}
+.question div button{
+  display: inline-block;
+  min-width: 10%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.submit-btn{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+}
+.try-btn{
+  display: inline-block;
+  min-width: 20%;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid green;
+  
+}
