@@ -1,8 +1,6 @@
 import db from "../db/db-connection.js";
 import express from "express";
-
 const router = express.Router();
-
 /* GET users listing. */
 
 router.get('/', async function (req, res, next) {
@@ -11,6 +9,7 @@ router.get('/', async function (req, res, next) {
     const users = await db.any('SELECT * FROM users', [true]);
     res.send(users);
   } catch (e) {
+    console.log(e)
     return res.status(400).json({ e });
   }
 });
@@ -20,7 +19,7 @@ router.get('/', async function (req, res, next) {
 router.post('/', async (req, res) => {
     const user = {
       name: req.body.name,
-      email: req.body.email
+      email: req.body.email,
     };
     console.log(user);
     try {
@@ -34,10 +33,7 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ e });
     }
   });
-
 /* delete request goes here  */
-/* Delete users listing. */
-
 //Parameterized queries use placeholders instead of directly writing the
 //values into the statements. Parameterized queries increase security and performance.
 
