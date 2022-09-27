@@ -6,8 +6,10 @@ config();
 //to see if API key is correct, got error message that it was wrong one
 console.log(process.env.API_KEY)
 
+//Ccreating an instance of express
 const app = express()
 
+//api route a get request
 app.get("/weather", (req, res) => {
     const params = new URLSearchParams({
 
@@ -18,6 +20,8 @@ app.get("/weather", (req, res) => {
     });
     const url = `https://api.openweathermap.org/data/2.5/weather?${params}`;
     console.log(url);
+
+    //a promise type, fetching to the openweather API
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -30,9 +34,11 @@ app.get("/weather", (req, res) => {
             lat:data.coord.lat,
             lon:data.coord.lon,
             weather:data.weather[0],
-            temp:data.temp,
+            temp:data.main.temp,
             date:data.dt
         }
+
+        //sending response to client which is weather
         res.json(weather);
       })
       .catch((err) => {

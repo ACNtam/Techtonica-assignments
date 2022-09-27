@@ -24,7 +24,7 @@ function Game() {
             console.log(error.message)
         }
     }
-    //quseton and  update answer
+    //question and  update answer
     const handleAnswers = (question, answer) => {
         if (!answers.includes(question)) {
             setAnswers([...answers, { question, answer }])

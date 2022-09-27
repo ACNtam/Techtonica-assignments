@@ -16,6 +16,7 @@ app.use(express.urlencoded({extended:true}))
 app.get('/questions', async (req, res) => {
     const response = await fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=boolean');
     const data = await response.json();
+    
     //decoded the special characters in the questions
     let result = data.results.map((question)=>{
         return {...question,question:decode(question.question)}

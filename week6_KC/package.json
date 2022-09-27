@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.mjs",
-    "dev": "nodemon index.jms"
+    "dev": "nodemon index.mjs"
   },
   "keywords": [],
   "author": "",
