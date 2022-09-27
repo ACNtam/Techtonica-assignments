@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Books Api</h1>
+    <div class="form-container">
+        <button class="accordion">Add Book</button>
+        <form class="panel" id="add-form">
+            <label for="isbn">Isbn</label>
+            <input type="text" id="isbn" name="isbn" placeholder="Isbn number..">
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Title..">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Author..">
+
+            <label for="format">Format</label>
+            <input type="text" id="format" name="format" placeholder="Format..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Isbn</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Format</th>
+                <th>Action</th>
+            </tr>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Edit Book</h3>
+    <form id="edit-form">
+        <label for="isbn">Isbn</label>
+        <input disabled type="text" class="isbn" name="isbn" placeholder="Isbn number..">
+
+        <label for="title">Title</label>
+        <input type="text" class="title" name="title" placeholder="Title..">
+        <label for="author">Author</label>
+        <input type="text" class="author" name="author" placeholder="Author..">
+
+        <label for="format">Format</label>
+        <input type="text" class="format" name="format" placeholder="Format..">
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</div>
+    </div>
+
+
+
+    <script src="component.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
